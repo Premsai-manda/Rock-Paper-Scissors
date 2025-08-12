@@ -6,7 +6,7 @@ const resultDisplay = document.getElementById("message");
 const playerScoreDisplay = document.getElementById("player-score");
 const compScoreDisplay = document.getElementById("computer-score");
 const optionsContainer = document.querySelector(".options");
-const endScore = Number(prompt("ENTER END SCORE FOR GAME.."));
+
 
 // Initialize game state variables
 let playerScore = 0;
@@ -58,11 +58,11 @@ function playGame(playerChoice) {
   // Remove any previous color classes from the message display
   resultDisplay.classList.remove("greenText", "redText", "winnerText");
 
-  // Check if a player has reached 11 points to win the game
-  if (playerScore === endScore) {
+  // Check if a player has reached 10 points to win the game
+  if (playerScore === 10) {
     displayFinalWinner("You are the final winner! Congratulations!");
     resultDisplay.classList.add("greenText");
-  } else if (compScore === endScore) {
+  } else if (compScore === 10) {
     displayFinalWinner("The computer is the final winner! Better luck next time!");
     resultDisplay.classList.add("redText");
   } else {
