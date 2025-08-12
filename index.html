@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Let's Play</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="head">
+    <h1>Rock..Paper..Scissors..</h1>
+  </div>
+  
+  <section class="options">
+    <div class="option" id="rock" onclick="playGame('rock')">
+      <h2>&#x1F44A;<br></h2>
+    </div>
+    
+    <div class="option" id="paper" onclick="playGame('paper')">
+      <h2>&#x1F590;<br></h2>
+    </div>
+    
+    <div class="option" id="scissors" onclick="playGame('scissors')">
+      <h2>&#x270C;<br></h2>
+    </div>
+  </section>
+
+  <section class="score-board">
+    <div class="score">
+      <p id="player-score" class="">0</p>
+      <p>you</p> 
+      <p id="playerClick" >-----</p>
+    </div>
+    <div class="score">
+      <p id="computer-score" class="">0</p>
+      <p>computer</p>
+      <p id="compClick">-----</p>
+    </div>
+  </section>  
+
+  <div class="message-container">
+    <p id="message">choose your move</p>
+  </div>
+  
+  <button id="reset-button" class="reset-btn" onclick="resetGame()">Reset Game</button>
+
+  <script src="app.js"></script>
+</body>
+</html>

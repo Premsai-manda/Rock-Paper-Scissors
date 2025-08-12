@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #030303;
+}
+
+.head {
+  color: yellow;
+  margin: 30px auto;
+  padding: 30px 20px;
+  max-width: 90%;
+  border: white;
+  box-shadow: 0 0 0px yellow,
+              0 0 5px yellow,
+              0 0 10px yellow;
+  border-radius: 30px;
+  font-family: cursive;
+
+}
+.head h1 {
+  font-size: 2em;
+}
+
+/* Game Options */
+.options {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  max-width: 95%;
+}
+
+.option {
+  width: 160px;
+  height: 180px;
+  background-color: black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 0 10px white,
+              0 0 15px white;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.option:hover {
+  box-shadow: 0 0 10px yellow,
+              0 0 20px yellow,
+              0 0 25px yellow,
+              0 0 30px yellow;
+}
+
+.option h2 {
+  z-index: 1;
+  color: aliceblue;
+  font-size: 5.5em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.option::before {
+  content: " ";
+  position: absolute;
+  width: 100px;
+  height: 130%;
+  background-image: linear-gradient(180deg, yellow, white);
+  animation: rotBGimg 4s linear infinite;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.option::after {
+  content: " ";
+  position: absolute;
+  background-color: black;
+  inset: 5px;
+  border-radius: 15px;
+}
+
+/* Scoreboard */
+.score-board {
+  color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px auto;
+  max-width: 95%;
+  border-radius: 200px;
+}
+
+.score {
+  padding: 10px;
+  color: aquamarine;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: cursive;
+}
+
+.num{
+  border:solid #fff;
+  width: 50px;
+}
+/* Message */
+.message-container {
+  color: aquamarine;
+  font-size: 1.5em;
+  font-family: cursive;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 90%;
+  border-radius: 20px;
+}
+
+.greenText {
+  color: rgb(114, 245, 114);
+  background-color: black;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 0px rgb(114, 245, 114),
+              0 0 10px rgb(114, 245, 114),
+              0 0 15px rgb(114, 245, 114),
+              0 0 20px rgb(114, 245, 114),
+              0 0 30px rgb(114, 245, 114);
+}
+
+.redText {
+  color: rgb(255, 15, 15);
+  background-color: black;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 0px rgb(255, 15, 15),
+              0 0 10px rgb(255, 15, 15),
+              0 0 15px rgb(255, 15, 15),
+              0 0 20px rgb(255, 15, 15),
+              0 0 30px rgb(255, 15, 15);
+}
+
+/* New style for the final winner message */
+.winnerText {
+  color: gold;
+  background-color: black;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 0px gold,
+              0 0 10px gold,
+              0 0 15px gold,
+              0 0 20px gold,
+              0 0 30px gold;
+}
+
+/* Style for the new reset button */
+.reset-btn {
+  background-color: #4A5568; /* gray-700 */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: cursive;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0px #4A5568,
+              0 0 5px #4A5568;
+}
+
+.reset-btn:hover {
+  background-color: #2D3748; /* gray-800 */
+  box-shadow: 0 0 0px #2D3748,
+              0 0 10px #2D3748;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .option {
+    width: 140px;
+    height: 160px;
+  }
+
+  .option h2 {
+    font-size: 3em;
+  }
+
+  .score {
+    font-size: 1.2em;
+  }
+
+  .message-container {
+    font-size: 1.2em;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .option {
+    width: 80px;
+    height: 100px;
+  }
+
+  .option h2 {
+    font-size: 2em;
+  }
+
+  .head h1 {
+    font-size: 1.5em;
+  }
+
+  .message-container {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  .score {
+    font-size: 1em;
+  }
+}
