@@ -71,7 +71,7 @@
 .option::before {
   content: " ";
   position: absolute;
-  width: 80px;
+  width: 60px;
   height: 130%;
   background-image: linear-gradient(180deg, yellow, white);
   animation: rotBGimg 4s linear infinite;
