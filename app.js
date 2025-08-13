@@ -60,10 +60,10 @@ function playGame(playerChoice) {
 
   // Check if a player has reached 10 points to win the game
   if (playerScore === 10) {
-    displayFinalWinner("You are the final winner! Congratulations!");
+    displayFinalWinner("Congratulations!");
     resultDisplay.classList.add("greenText");
   } else if (compScore === 10) {
-    displayFinalWinner("The computer is the final winner! Better luck next time!");
+    displayFinalWinner("Better luck next time!");
     resultDisplay.classList.add("redText");
   } else {
     // Apply round-specific color styling if the game is still ongoing

@@ -16,7 +16,7 @@
               0 0 5px yellow,
               0 0 10px yellow;
   border-radius: 30px;
-  font-family: cursive;
+  font-family: monospace;
 
 }
 .head h1 {
@@ -65,7 +65,7 @@
   z-index: 1;
   color: aliceblue;
   font-size: 5.5em;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: monospace;
 }
 
 .option::before {
@@ -111,7 +111,7 @@
   color: aquamarine;
   text-align: center;
   font-size: 1.5em;
-  font-family: cursive;
+  font-family: monospace;
 }
 
 .num{
@@ -122,7 +122,7 @@
 .message-container {
   color: aquamarine;
   font-size: 1.5em;
-  font-family: cursive;
+  font-family: monospace;
   padding: 20px;
   margin: 20px auto;
   max-width: 90%;
@@ -175,7 +175,7 @@
   border-radius: 8px;
   cursor: pointer;
   font-size: 1em;
-  font-family: cursive;
+  font-family: monospace;
   margin-top: 20px;
   transition: all 0.3s ease;
   box-shadow: 0 0 0px #4A5568,
