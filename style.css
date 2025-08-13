@@ -32,7 +32,7 @@
 .options {
   display: flex;
   gap: 20px;
-  justify-content: space-evenly;
+  justify-content:space-evenly;
   flex-wrap: wrap;
   margin: 20px auto;
   max-width: 95%;
@@ -196,7 +196,7 @@
   }
 
   .option h2 {
-    font-size: 3em;
+    font-size: 5em;
   }
 
   .score {
